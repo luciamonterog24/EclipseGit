@@ -26,5 +26,6 @@
 			</tr>
 			</c:forEach>
 		</table>
+		<button type="button" name="back" onClick="history.back()">Volver</button>
 	</body>
 </html>
