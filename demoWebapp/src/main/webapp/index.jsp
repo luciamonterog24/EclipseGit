@@ -1,28 +1,38 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>JSP</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+	<title>Web Empleados</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript">
+	    function openPage(pageURL) {
+	    	window.location.href = pageURL;
+	    }
+	</script>
 </head>
 <body>
-<h2>Web Empleados</h2>
-
-	<br>
- 	<form action="demoServlet?action=mostrarEmpleados" method="post">
- 	<h3>Mostrar todos los empleados</h3>
-		<input class="boton" type="submit" value="Mostrar">
-	</form>
-	<form action="demoServlet?action=mostrarEmpleadoCategoria" method="post">
-	<h3>Mostrar empleados por categoria</h3>
-		Introduce la categoria: <input type="text" id="categoria" name="categoria">
-		<input class="boton" type="submit">
-	</form>
-	<form action="demoServlet?action=modificarEmpleado" method="post">
-	<h3>Modificar empleado</h3>
-		Introduce el empleado: <input type="text" id="empleado" name="empleado">
-		<input class="boton" type="submit">
-	</form>
-	
+	<div class="cabecera">
+		<div class="cabecera-barra">
+			<div class="cabecera-separador">
+				<h1><a href="#">Web<span>Empleados</span></a></h1>
+				<nav>
+					<a href="#">Inicio</a>
+					<a href="vista/contacto.jsp">Contacto</a>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<div class="cuerpo">
+		<form action="demoServlet?action=mostrarEmpleados" method="post">
+			<input class="button" type="submit" value="Mostrar todos los empleados">
+		</form>
+		<input type="button" value="Buscar empleado" class="button"
+       	onclick="openPage('buscarEmpleadoDNI.jsp')"/>
+       	<br>
+       	<br>
+       	<input type="button" value="Mostrar salario de empleado" class="button"
+       	onclick="openPage('buscarEmpleadoSalario.jsp')"/>
+	</div>
 </body>
 </html>

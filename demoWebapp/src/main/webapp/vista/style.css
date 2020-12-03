@@ -1,0 +1,81 @@
+/*   Cabecera */
+.cabecera {
+	font:13px Verdana, Helvetica, sans-serif;
+	height: 20%;
+	width:100%;
+}
+
+.cabecera h1{
+    float: left;
+    font: normal 28px Cookie, Arial, Helvetica, sans-serif;
+    line-height: 40px;
+    margin: 0;
+}
+
+.cabecera h1 span {
+    color: #9f5f80;
+}
+
+.cabecera-barra {
+    background-color:#ffba93;
+    box-shadow:0 2px 2px #ccc;
+    padding: 40px 30px;
+    height: 20%;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+ 
+.cabecera-barra a {
+    color: #ffffff;
+    text-decoration: none;
+}
+ 
+.cabecera-barra nav {
+    font:15px Arial, Helvetica, sans-serif;
+    line-height: 40px;
+    float: left;
+    margin: 0 0 0 60px;
+    padding: 0;
+}
+ 
+.cabecera-barra nav a{
+    display: inline-block;
+    padding: 0 5px;
+    opacity: 0.9;
+    text-decoration:none;
+    line-height: 1;
+}
+ 
+.cabecera-barra nav a:hover {
+    opacity: 1;
+}
+ 
+.cabecera-barra nav a.activo {
+    border-radius: 2px;
+    background-color: #2B5773;
+    padding: 8px 12px;
+}
+
+/*   Cuerpo */
+
+.cuerpo {
+	padding-top:50px;
+	height: 80%;
+	width:100%;
+	font:13px Verdana, Helvetica, sans-serif;
+}
+
+/* botones */
+.button {
+			width: auto;
+			transition-duration: 0.4s;
+			background-color: white;
+			border: 1px solid #9f5f80;
+			color: black;
+			border-radius: 4px;
+			
+		}
+.button:hover{
+  			background-color: #9f5f80;
+  			color: white;
+}

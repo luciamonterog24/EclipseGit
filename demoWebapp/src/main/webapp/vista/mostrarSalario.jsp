@@ -5,7 +5,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Mostrar empleados</title>
+		<title>Mostrar Salario</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<style>
 			th {
@@ -39,17 +39,13 @@
 					<tr>
 						<th>Nombre</th>
 						<th>DNI</th>
-						<th>Sexo</th>
-						<th>Categoria</th>
-						<th>Años trabajados</th>
+						<th>Salario</th>
 					</tr>
 					<c:forEach var="empleado" items="${empleados}">
 					<tr align="middle">
 						<td>${empleado.nombre }</td>
 						<td>${empleado.dni }</td>
-						<td>${empleado.sexo }</td>
-						<td>${empleado.categoria }</td>
-						<td>${empleado.aniosTrabajados }</td>
+						<td>${empleado.salario }</td>
 					</tr>
 					</c:forEach>
 				</table>
@@ -58,7 +54,6 @@
 					<p style="color: red">No existe ningún usuario.</p>
 				</c:otherwise>
 			</c:choose>
-		
 	</div>
 	<br>
 	<input type="button" value="Volver" class="button" onClick="history.back()"/>

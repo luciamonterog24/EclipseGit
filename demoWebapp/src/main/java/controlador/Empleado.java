@@ -8,14 +8,16 @@ public class Empleado {
 	private String sexo;
 	private int categoria;
 	private int aniosTrabajados;
+	private int salario;
 	
 	//Constructor
-	public Empleado(String nombre, String dni, String sexo, int categoria, int aniosTrabajados) {	
+	public Empleado(String nombre, String dni, String sexo, int categoria, int aniosTrabajados, int salario) {	
 		this.nombre=nombre;
 		this.dni=dni;
 		this.sexo=sexo;
 		this.categoria=categoria;
 		this.aniosTrabajados=aniosTrabajados;
+		this.salario=salario;
 	}
 	
 	public Empleado() {
@@ -62,6 +64,14 @@ public class Empleado {
 
 	public void setAniosTrabajados(int aniosTrabajados) {
 		this.aniosTrabajados = aniosTrabajados;
+	}
+	
+	public int getSalario() {
+		return salario;
+	}
+
+	public void setSalario(int salario) {
+		this.salario = salario;
 	}
 	
 	
